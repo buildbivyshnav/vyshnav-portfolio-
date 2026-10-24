@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vyshnav | Frontend Developer</title>
+<meta name="description" content="Vyshnav is a frontend developer who builds fast, responsive and accessible websites, from landing pages to full web app interfaces.">
+<meta name="theme-color" content="#070b0b">
+
+<!-- Social sharing (update the URL once your site is live) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vyshnav | Frontend Developer">
+<meta property="og:description" content="Fast, responsive and accessible websites.">
+<meta property="og:image" content="profile.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%232a9d8f'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Arial' font-weight='700' text-anchor='middle' fill='%2306201c'%3EV%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress"></div>
+
+<!-- ================= HEADER ================= -->
+<header id="header">
+  <div class="container nav">
+    <a href="#home" class="logo" aria-label="Vyshnav, home">
+      <span class="logo-mark">V</span><span>Vyshnav</span>
+    </a>
+    <nav aria-label="Main">
+      <ul class="menu" id="menu">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="btn"><span>Hire me</span></a>
+    <button class="burger" id="burger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section id="home" class="code-bg hero on-dark" data-code="function buildInterface(design) {
+  const layout = createGrid(design.columns);
+  const components = design.sections.map(render);
+
+  // make it responsive
+  window.addEventListener('resize', () => {
+    layout.adapt(window.innerWidth);
+  });
+
+  // make it accessible
+  components.forEach(el => {
+    el.setAttribute('role', 'region');
+    el.tabIndex = 0;
+  });
+
+  // make it fast
+  lazyLoad(document.querySelectorAll('img'));
+  return layout.mount(components);
+}
+
+const site = buildInterface(myDesign);
+site.deploy({ performance: 'A+', responsive: true });">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">Frontend developer &middot; Web designer</p>
+      <h1>I build fast, beautiful websites that people <em>enjoy using</em></h1>
+      <p class="lead">Hi, I'm Vyshnav. I turn ideas and designs into clean, responsive and accessible websites, from landing pages to full web app interfaces.</p>
+      <div class="actions">
+        <a href="#work" class="btn"><span>View my work</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#contact" class="btn ghost"><span>Let's talk</span></a>
+      </div>
+      <ul class="hero-points">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Mobile-first</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Accessible</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Fast loading</li>
+      </ul>
+      <!-- TODO: replace the # links with your real profiles -->
+      <div class="socials">
+        <a href="https://github.com/buildbivyshnav" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg></a>
+        
+        <a href="https://www.instagram.com/build.bi_vyshnav?exln=NjRqc3NhYzVuNWQ=" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.5-3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/></svg></a>
+        
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11.5H3V9.75Zm6.5 0h3.8v1.57h.05c.53-1 1.83-2.07 3.77-2.07 4.03 0 4.78 2.65 4.78 6.1v5.9h-4v-5.23c0-1.25-.02-2.85-1.74-2.85-1.74 0-2 1.36-2 2.76v5.32h-4V9.75Z"/></svg></a>
+        <a href="#contact" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="profile.jpg" alt="Portrait of Vyshnav" width="900" height="900" fetchpriority="high">
+      <span class="hero-badge"><i></i>Available for work</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS STRIP ================= -->
+<div class="marquee-wrap">
+  <div class="container">
+    <div class="marquee" aria-label="Technologies I work with">
+      <div class="track">
+        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span>
+        <span>Flexbox &amp; Grid</span><span>Accessibility</span><span>Git &amp; GitHub</span><span>Performance</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="pad about">
+  <div class="container about-grid">
+    <div class="reveal left">
+      <p class="eyebrow">About me</p>
+      <h2 class="section-title">Building the web, one clean interface at a time</h2>
+      <p>I'm a frontend developer who loves the moment a design comes to life in the browser. I write clean HTML, CSS and JavaScript that works on every screen and loads quickly.</p>
+      <p>I build and ship my projects straight from my phone, which has taught me to keep code lean, simple and well organised.</p>
+      <div class="facts">
+        <div class="fact"><small>Role</small><strong>Frontend Developer</strong></div>
+        <div class="fact"><small>Focus</small><strong>Responsive &amp; accessible UI</strong></div>
+        <div class="fact"><small>Stack</small><strong>HTML, CSS, JavaScript</strong></div>
+        <div class="fact"><small>Workflow</small><strong>Mobile-first</strong></div>
+      </div>
+      <a href="#contact" class="btn"><span>Work with me</span></a>
+    </div>
+    <div class="code-shot reveal right" aria-hidden="true">
+      <div class="dots"><i></i><i></i><i></i></div>
+<span class="k">const</span> <span class="f">vyshnav</span> = {<br>
+&nbsp;&nbsp;role: <span class="s">"Frontend Developer"</span>,<br>
+&nbsp;&nbsp;stack: [<span class="s">"HTML"</span>, <span class="s">"CSS"</span>, <span class="s">"JavaScript"</span>],<br>
+&nbsp;&nbsp;focus: <span class="s">"Clean, fast, responsive"</span>,<br>
+&nbsp;&nbsp;available: <span class="k">true</span><br>
+};<br><br>
+<span class="c">// Let's build something great</span><br>
+<span class="f">hire</span>(vyshnav)<span class="cursor"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="pad services">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow">What I offer</p>
+      <h2 class="section-title">Everything you need to get a great website online</h2>
+      <p class="section-sub">From the first sketch to the final deploy, I handle the frontend so your site looks sharp and works everywhere.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="14" height="11" rx="2"/><rect x="14" y="9" width="8" height="12" rx="2"/></svg></div>
+        <h3>Responsive Websites</h3>
+        <p>Layouts that adapt perfectly to phones, tablets and desktops, built with modern CSS Grid and Flexbox.</p>
+      </article>
+      <article class="card reveal d1">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v6H4zM4 14h9v6H4zM17 14h3v6h-3z"/></svg></div>
+        <h3>Landing Pages</h3>
+        <p>Focused pages with smooth animations and clear calls to action that guide visitors to take the next step.</p>
+      </article>
+      <article class="card reveal d2">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div>
+        <h3>Web App Interfaces</h3>
+        <p>Interactive, accessible interfaces in JavaScript, with clean, maintainable code your team can build on.</p>
+      </article>
+      <article class="card reveal d3">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg></div>
+        <h3>Speed &amp; Accessibility</h3>
+        <p>Lightweight pages, optimised images and semantic markup so everyone gets a fast, usable experience.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WORK ================= -->
+<!-- TODO: replace these three sample projects with your real work (titles, text and links) -->
+<section id="work" class="pad">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Selected work</p>
+      <h2 class="section-title">Projects I'm proud of</h2>
+      <p class="section-sub">A few examples of the kind of sites and interfaces I build.</p>
+    </div>
+    <div class="car-controls reveal">
+      <button class="car-btn" id="prev" type="button" aria-label="Previous project"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></button>
+      <button class="car-btn" id="next" type="button" aria-label="Next project"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></button>
+    </div>
+    <div class="carousel reveal d1" id="carousel" tabindex="0" role="region" aria-label="Projects carousel">
+      <article class="slide">
+        <div class="browser">
+          <div class="chrome"><div class="lights"><i></i><i></i><i></i></div><div class="url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>project-one.com</div></div>
+          <div class="screen s1"><div class="mock"><div class="bar"><i></i><i></i><i></i></div><div class="b t"></div><div class="b w"></div><div class="b m"></div><div class="row"><div></div><div></div><div></div></div></div></div>
+        </div>
+        <div class="slide-info">
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <h3>Business Landing Page</h3>
+          <p>A fast, mobile-first marketing page with scroll animations and a clear sign-up flow.</p>
+          <div class="links"><a href="#">Live demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a><a href="#">Source code <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+        </div>
+      </article>
+      
+     
+     <article class="slide">
+  <div class="browser">
+    <div class="chrome"><div class="lights"><i></i><i></i><i></i></div><div class="url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>coming-soon.dev</div></div>
+    <div class="screen soon">
+      <img src="work.png" alt="Business Landing Page" style="width:100%;height:100%;object-fit:cover;">
+    </div>
+  </div>
+  <div class="slide-info">
+    <h3>Coming Soon 1</h3>
+    <p>More projects are on the way. Have an idea? Let's build it together.</p>
+    <div class="links"><a href="#contact">Start a project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+  </div>
+</article>
+
+     
+     <article class="slide">
+        <div class="browser">
+          <div class="chrome"><div class="lights"><i></i><i></i><i></i></div><div class="url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>coming-soon.dev</div></div>
+          <div class="screen soon"><div class="clock"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div></div>
+        </div>
+        <div class="slide-info">
+          <h3>Coming Soon 1</h3>
+          <p>More projects are on the way. Have an idea? Let's build it together.</p>
+          <div class="links"><a href="#contact">Start a project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+        </div>
+      </article>
+     
+      <article class="slide">
+        <div class="browser">
+          <div class="chrome"><div class="lights"><i></i><i></i><i></i></div><div class="url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>coming-soon.dev</div></div>
+          <div class="screen soon"><div class="clock"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div></div>
+        </div>
+        <div class="slide-info">
+          <h3>Coming Soon 1</h3>
+          <p>More projects are on the way. Have an idea? Let's build it together.</p>
+          <div class="links"><a href="#contact">Start a project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+        </div>
+      </article>
+    </div>
+    <div class="pager" id="pager" aria-label="Choose project"></div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="pad skills on-dark">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Toolbox</p>
+      <h2 class="section-title">Skills &amp; technologies</h2>
+      <p class="section-sub">The tools I use to design, build and ship.</p>
+    </div>
+    <div class="skill-groups">
+      <div class="group reveal"><h3>Core</h3><div class="chips"><span>HTML5</span><span>CSS3</span><span>JavaScript (ES6+)</span><span>React.js</span></div></div>
+      <div class="group reveal d1"><h3>Backend </h3><div class="chips"><span>Node.js</span><span>Express.js</span><span>Supabase</span><span>MongoDB</span><span>PostgreSQL</span></div></div>
+      <div class="group reveal d2"><h3>Tools</h3><div class="chips"><span>GitHub</span><span>Vscode</span><span>Cloudinary</span><span>Wordpress</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="pad">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow">How it works</p>
+      <h2 class="section-title">A simple process from idea to launch</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Discover</h3><p>We talk through your goals, audience and what success looks like.</p></div>
+      <div class="step reveal d1"><h3>Design</h3><p>I plan the layout and style, and share it with you for feedback.</p></div>
+      <div class="step reveal d2"><h3>Build</h3><p>I code the site with clean, responsive and accessible HTML, CSS and JS.</p></div>
+      <div class="step reveal d3"><h3>Launch</h3><p>We test on real devices, then go live and fine-tune together.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA BAND ================= -->
+<section class="code-bg cta on-dark" data-code="    // ready when you are
+    const project = await startConversation();
+    const plan = createPlan(project.goals);
+
+    if (plan.approved) {
+        design(plan);
+        develop(plan);
+        launch(plan);
+    }
+
+    // deploy with confidence
+    site.test({ devices: ['mobile', 'tablet', 'desktop'] });">
+  <div class="container">
+    <p class="eyebrow reveal">Have a project in mind?</p>
+    <h2 class="reveal d1">Let's get started</h2>
+    <p class="reveal d2">Tell me about your idea and let's turn it into a website you're proud of.</p>
+    <a href="#contact" class="btn reveal d3"><span>Start a project</span></a>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="pad contact">
+  <div class="container contact-grid">
+    <div class="reveal left">
+      <p class="eyebrow">Contact</p>
+      <h2 class="section-title">Let's build something great together</h2>
+      <p>Have a project, a question or just want to say hello? Send me a message and I'll get back to you.</p>
+      <div class="info">
+        <a href="#" data-email>
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <span><small>Email</small><strong>vyshnavas716@gmail.com</strong></span>
+        </a>
+      </div>
+      <!-- TODO: replace the # links with your real profiles -->
+      <div class="socials">
+        <a href="https://github.com/buildbivyshnav" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg></a>
+        
+        <a href="https://www.instagram.com/build.bi_vyshnav?exln=NjRqc3NhYzVuNWQ=" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.5-3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/></svg></a>
+        
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11.5H3V9.75Zm6.5 0h3.8v1.57h.05c.53-1 1.83-2.07 3.77-2.07 4.03 0 4.78 2.65 4.78 6.1v5.9h-4v-5.23c0-1.25-.02-2.85-1.74-2.85-1.74 0-2 1.36-2 2.76v5.32h-4V9.75Z"/></svg></a>
+      </div>
+    </div>
+    <form id="contactForm" class="reveal right" novalidate>
+      <div class="two">
+        <div><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required></div>
+        <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
+      </div>
+      <div><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell me about your project" required></textarea></div>
+      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button type="submit" class="btn"><span>Send message</span></button>
+      <p id="formMsg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="#home" class="logo"><span class="logo-mark">V</span><span>Vyshnav</span></a>
+        <p>Frontend developer building fast, responsive and accessible websites.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://github.com/buildbivyshnav">GitHub</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; <span id="year">2026</span> Developer. All rights reserved.</span>
+      <span>Designed &amp; built by Vyshnav</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 15 6-6 6 6"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
